@@ -28,3 +28,25 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* 导航栏居中样式 - Logo在左，菜单居中 */
+.navbar__inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.theme-layout-navbar-left {
+  flex: 1;
+  justify-content: center;
+}
+
+.navbar__brand {
+  margin-right: 1rem;
+}
+
+@media (max-width: 996px) {
+  .theme-layout-navbar-left {
+    justify-content: flex-start;
+  }
+}

@@ -77,6 +77,12 @@ const config = {
         },
         items: [
           {
+            type: 'docSidebar',
+            sidebarId: 'aigeneralSidebar',
+            position: 'left',
+            label: 'AI赋能指南',
+          }, 
+          {
             type: 'dropdown',
             label: 'Allwinner系列',
             position: 'left',

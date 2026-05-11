@@ -1,0 +1,8 @@
+{
+  "label": "系统烧录",
+  "position": 4,
+  "link": {
+    "type": "doc",
+    "id": "IMX6ULL-PRO/flash-guide/usb-flash"
+  }
+}

@@ -9,18 +9,24 @@ title: '100ASK_IMX6ULL-PRO 文档中心'
 
 欢迎使用 **100ASK_IMX6ULL-PRO** Linux 5.4.47 全自动开发平台。本平台基于 Buildroot 构建，为 i.MX6ULL Pro 开发板提供从源码编译、系统烧录到应用开发的全流程支持。
 
+## 开发环境要求
+
+- **操作系统**: Ubuntu 18.04/20.04/22.04 (推荐 20.04)
+- **工具链**: arm-linux-gnueabihf- (gcc 9.2)
+- **磁盘空间**: 至少 20GB
+- **内存**: 至少 4GB (推荐 8GB)
+
 ## 快速导航
 
 | 章节 | 内容 |
 |------|------|
-| [开发板介绍](./01-board-intro/01-board-introduction) | 硬件规格、接口说明、配套资源 |
-| [快速开始](./02-quick-start/01-quick-start) | 首次上电、串口连接、系统烧录 |
-| [编译指南](./03-build-guide/01-buildroot-build) | Buildroot 系统编译全流程 |
-| [系统烧录](./04-flash-guide/01-usb-flash) | USB SDP / Fastboot 烧录方法 |
-| [U-Boot 开发](./05-uboot-dev/01-uboot-overview) | Bootloader 编译与定制 |
-| [Linux 内核开发](./06-kernel-dev/01-kernel-overview) | 内核编译、驱动开发、设备树 |
-| [系统定制](./07-system-custom/01-buildroot-custom) | RootFS 定制、新增应用包、开机自启 |
-| [AI 技能手册](./08-ai-skills/01-auto-bootmode) | AI 自动化烧录、技能指引 |
+| [快速开始](/docs/IMX6ULL-PRO/quick-start/quick-start) | 首次上电、串口连接、系统烧录 |
+| [编译指南](/docs/IMX6ULL-PRO/build-guide/buildroot-build) | Buildroot 系统编译全流程 |
+| [系统烧录](/docs/IMX6ULL-PRO/flash-guide/usb-flash) | USB SDP / Fastboot 烧录方法 |
+| [U-Boot 开发](/docs/IMX6ULL-PRO/uboot-dev/uboot-overview) | Bootloader 编译与定制 |
+| [Linux 内核开发](/docs/IMX6ULL-PRO/kernel-dev/kernel-overview) | 内核编译、驱动开发、设备树 |
+| [系统定制](/docs/IMX6ULL-PRO/system-custom/buildroot-custom) | RootFS 定制、新增应用包、开机自启 |
+| [AI 技能手册](/docs/IMX6ULL-PRO/ai-skills/auto-bootmode) | AI 自动化烧录、技能指引 |
 
 ## 平台特性
 
@@ -41,9 +47,3 @@ aibsp-imx6ull-pro_linux5.4.47
 └── linux-imx/                    # Linux 内核源码（子模块）
 ```
 
-## 开发环境要求
-
-- **操作系统**: Ubuntu 18.04/20.04/22.04 (推荐 20.04)
-- **工具链**: arm-linux-gnueabihf- (gcc 9.2)
-- **磁盘空间**: 至少 20GB
-- **内存**: 至少 4GB (推荐 8GB)

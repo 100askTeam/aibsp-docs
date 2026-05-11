@@ -63,7 +63,7 @@ title: '快速开始指南'
 ### 系统无法启动
 - 检查电源供电是否稳定 (5V/2A)
 - 确认 eMMC 中已烧录系统镜像
-- 如未烧录，请参考 [系统烧录指南](../04-flash-guide/01-usb-flash)
+- 如未烧录，请参考 [系统烧录指南](/docs/IMX6ULL-PRO/flash-guide/usb-flash)
 
 ### Starting kernel 卡住
 - 检查 DTB 文件是否正确

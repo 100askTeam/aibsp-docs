@@ -89,28 +89,28 @@ const config = {
             items: [
               {
               type: 'docSidebar',
-              sidebarId: 't113s3proSidebar',
-              label: 'T113s3-PRO',
+              sidebarId: 't113Sidebar',
+              label: 'T113S3/S4/i单板',
               },
               {
               type: 'docSidebar',
-              sidebarId: 't113iSidebar',
-              label: 'T113i-Industrial',
+              sidebarId: 'd1Sidebar',
+              label: 'D1S/H/F133单板',
               },
               {
               type: 'docSidebar',
               sidebarId: 'a133Sidebar',
-              label: 'A133-mCore',
+              label: 'A133/R818单板',
               },
               {
               type: 'docSidebar',
               sidebarId: 't527Sidebar',
-              label: 'T527-AvaotaA1',
+              label: 'T527/A527 AvaotaA1',
               },
               {
               type: 'docSidebar',
-              sidebarId: 't153mxSidebar',
-              label: 'T153-Dual4GGateway',
+              sidebarId: 't153Sidebar',
+              label: 'T153M3/MX/M4单板',
               },                                 
             ],
           },
@@ -121,7 +121,7 @@ const config = {
             items: [
               {
               type: 'docSidebar',
-              sidebarId: 'dshannezhastuSidebar',
+              sidebarId: 'rk3568Sidebar',
               label: 'RK3568-DshanPI-R1+',
               },                                            
             ],
@@ -133,7 +133,7 @@ const config = {
             items: [
               {
               type: 'docSidebar',
-              sidebarId: 'r818Sidebar',
+              sidebarId: 'imx6ullSidebar',
               label: '100ASK_IMX6ULL-PRO',
               },                           
             ],
@@ -145,8 +145,8 @@ const config = {
             items: [
               {
               type: 'docSidebar',
-              sidebarId: 'a527Sidebar',
-              label: 'STM32MP157',
+              sidebarId: 'stm32mp1Sidebar',
+              label: 'STM32MP157-PRO',
               },                           
             ],
           },                                       

@@ -1,8 +1,0 @@
-{
-  "label": "系统定制",
-  "position": 7,
-  "link": {
-    "type": "doc",
-    "id": "IMX6ULL-PRO/system-custom/buildroot-custom"
-  }
-}

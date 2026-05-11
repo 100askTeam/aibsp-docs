@@ -3,9 +3,9 @@ sidebar_label: 'AI开发概述'
 title: 'T113S4 AI Agent 自动化开发概述'
 ---
 
-# T113S4 AI Agent 自动化开发
+# T113x AI Agent 自动化开发
 
-100ASK_T113S4-SdNand 实现了 **AI Agent 无人全自动化嵌入式开发**，覆盖从 SDK 编译、镜像打包、自动烧录到串口验证的完整闭环。
+100ASK_T113 实现了 **AI Agent 无人全自动化嵌入式开发**，覆盖从 SDK 编译、镜像打包、自动烧录到串口验证的完整闭环。
 
 ## 系统概述
 
@@ -27,6 +27,8 @@ title: 'T113S4 AI Agent 自动化开发概述'
 ├── platform/ kernel/ openwrt/ # 项目源码
 └── README.md
 ```
+
+![image-20260511175624247](./images/image-20260511175624247.png)
 
 ## 整体架构
 
@@ -53,7 +55,7 @@ flowchart LR
 | 编排层 | `skills/` | 定义"先做什么、后做什么、失败如何恢复" |
 | 工具层 | OpenixCLI、serial_agent | 提供原子能力（烧录、串口、日志） |
 | 源码层 | platform/、kernel/、openwrt/ | 实现业务功能并产出镜像 |
-| 设备层 | T113S4 板卡 | 执行烧录、启动、运行验证 |
+| 设备层 | T113S4/S4/I 板卡 | 执行烧录、启动、运行验证 |
 
 ## 核心组件
 
@@ -87,10 +89,9 @@ python3 trae_serial_terminal.py io --auto-select --vid 1a86 --pid 55d4 --baudrat
 
 | 技能 | 说明 |
 |------|------|
-| [SDK编译与烧录](system-sdk-ai-default) | 默认全流程：编译、打包、烧录、串口验证 |
-| [串口调试与烧录](t113s3-flash-serial-debug) | 烧录与串口联调增强版 |
-| [C906异构开发](t113-c906-heterogeneous-dev) | 异构与 RPMsg 场景联调 |
-| [LVGL UI开发](t113s4-lvgl-ui-demo-dev) | UI 开发与板端验证（含 ADB 文件传输） |
+| [串口调试与烧录](/docs/T113x/T113s4-SdNand-Skills/01-t113s3-flash-serial-debug) | 烧录与串口联调增强版 |
+| [C906 异构开发](/docs/T113x/T113s4-SdNand-Skills/01-t113-c906-heterogeneous-dev) | 异构与 RPMsg 场景联调 |
+| [LVGL UI 开发](/docs/T113x/T113s4-SdNand-Skills/01-t113s4-lvgl-ui-demo-dev) | UI 开发与板端验证（含 ADB 文件传输） |
 
 ## 端到端流程
 
@@ -113,11 +114,12 @@ flowchart TD
 ## 环境要求
 
 **主机环境（Linux）：**
+
 - Python 3.8+（serial_agent）
 - Rust 工具链 + libusb（OpenixCLI）
 - 串口权限（建议加入 dialout）
-- 可选：picocom、ADB
+- 文件传输：picocom、ADB
 
 **硬件环境：**
-- T113S4/T113S3 开发板
+- T113S4/T113S3/T113i 开发板
 - 可用 USB 串口与烧录链路
